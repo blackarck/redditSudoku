@@ -36,7 +36,7 @@ export const printSudoku = (whichOne: number): void => {
 export const hideSudoku = (gamemode: 1 | 2 | 3): void => {
     hiddenSudokuarr = sudokuarr.map(row => [...row]);
     
-    const hideCounts = { 1: 26, 2: 23, 3: 19 };
+    const hideCounts = { 1: 32, 2: 26, 3: 22 };
     callHide(hideCounts[gamemode] || 26);
     
     hiddenSudokuclone = hiddenSudokuarr.map(row => [...row]);
@@ -94,7 +94,7 @@ export const fillsudokuarr = (): void => {
             }
         }
     }
-    console.log("Done generating grid " + sudokuarr);
+    console.log("Done generating grid 1 " + sudokuarr);
 };
 
 // Function to check Sudoku rules
