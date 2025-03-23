@@ -36,8 +36,8 @@ export const printSudoku = (whichOne: number): void => {
 export const hideSudoku = (gamemode: 1 | 2 | 3): void => {
     hiddenSudokuarr = sudokuarr.map(row => [...row]);
     
-    const hideCounts = { 1: 32, 2: 26, 3: 22 };
-    callHide(hideCounts[gamemode] || 26);
+    const hideCounts = { 1: 34, 2: 28, 3: 24 };
+    callHide(hideCounts[gamemode] || 28);
     
     hiddenSudokuclone = hiddenSudokuarr.map(row => [...row]);
 };
@@ -63,7 +63,7 @@ export const fillsudokuarr = (): void => {
     for (let i = 0; i < 9; i++) {
         icnt++;
         if (icnt > 20) {
-            console.log("Got stuck, redoing some steps.");
+            //console.log("Got stuck, redoing some steps.");
             icnt = 0;
             let reducer = i > 6 ? 4 : i > 4 ? 3 : i > 3 ? 2 : 0;
             for (let icl = i - reducer; icl <= i; icl++) {
@@ -94,7 +94,7 @@ export const fillsudokuarr = (): void => {
             }
         }
     }
-    console.log("Done generating grid 1 " + sudokuarr);
+   // console.log("Done generating grid " + sudokuarr);
 };
 
 // Function to check Sudoku rules
