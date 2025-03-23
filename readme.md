@@ -19,7 +19,7 @@ For suggestions, feedback, or questions, feel free to reach out on Reddit or ope
 
 ## 🔗 Links
 - GitHub Repo: [https://github.com/blackarck/redditSudoku](https://github.com/blackarck/redditSudoku)
-- YouTube Demo: [https://youtu.be/siits-Iz-PM](Watch the demo)
+- YouTube Demo: [https://youtu.be/siits-Iz-PM](https://youtu.be/siits-Iz-PM)
 
 ```bash
 1. Click **“Generate New Puzzle”** to start solving.
