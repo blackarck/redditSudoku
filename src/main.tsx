@@ -174,7 +174,7 @@ Devvit.addCustomPostType({
             context.ui.showToast("🎉 Congratulations! You've Won!"); // Added toast
           }
         }
-        setSelectedCell(null);
+       // setSelectedCell(null);
       }
     };
 
@@ -264,7 +264,7 @@ Devvit.addCustomPostType({
                 newGrid[selectedCell.row][selectedCell.col] = 0;
                 setUserInputGrid(newGrid);
                 setInstructtxt("Cell cleared!");
-                setSelectedCell(null);
+               // setSelectedCell(null);
               } else {
                 //  do nothing
               }
@@ -378,7 +378,11 @@ Devvit.addCustomPostType({
                   const index = row * 9 + col;
                   const cell = sudokuGrid[row]?.[col];
 
-                  const blockColor = Math.floor(row / 3) % 2 === Math.floor(col / 3) % 2
+                  const isSelected = selectedCell?.row === row && selectedCell?.col === col;
+
+                  const blockColor = isSelected
+                   ? "#FFD700" // golden yellow for selected
+                   : Math.floor(row / 3) % 2 === Math.floor(col / 3) % 2
                     ? "#E8EEF2" // light silver
                     : "#B4D4F7"; // light blue
                   const isPrefilled = cell !== 0;
@@ -389,8 +393,8 @@ Devvit.addCustomPostType({
                       backgroundColor={blockColor}
                       padding="small"
                       alignment="center middle"
-                      height="22px"
-                      width="22px"
+                      height="23px"
+                      width="23px"
                       onPress={() => {
                         if (!isPrefilled) {
                           setSelectedCell({ row, col });

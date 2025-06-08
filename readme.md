@@ -7,6 +7,7 @@ The **Sudoku App for Reddit** is a web-based Sudoku game built with Reddit users
 - **🧠 Generate New Sudoku Puzzles** – Start solving with a brand-new puzzle every time.  
 - **🤝 Shareable Puzzles** – Send a puzzle to a friend so you both can solve the *same* grid in real-time.  
 - **⚡ Quiz Mode** – A fast-paced twist: fill just **5 correct numbers** to win the game!
+- ** 🎨 Cell selection feature added
 
 
 ## 🕹️ How to Use
